@@ -35,10 +35,8 @@
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">OPD :</h6>
-            <a class="collapse-item" href="buttons.html">Nama OPD</a>
-            <a class="collapse-item" href="cards.html">Jabatan</a>
-            <a class="collapse-item" href="cards.html">Tambah OPD</a>
-            <a class="collapse-item" href="cards.html">Tambah Jabatan</a>
+            <a class="collapse-item" href="/opd">Nama OPD</a>
+            <a class="collapse-item" href="/jabatan">Jabatan</a>
           </div>
         </div>
       </li>
@@ -52,8 +50,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Pegawai Kab Paser:</h6>
-            <a class="collapse-item" href="buttons.html">Golongan IV</a>
-            <a class="collapse-item" href="cards.html">Golongan III</a>
+            <a class="collapse-item" href="/pegawai">Daftar Pegawai</a>
+            <a class="collapse-item" href="/pejabat">Daftar Pejabat</a>
             <a class="collapse-item" href="cards.html">Golongan II</a>
             <a class="collapse-item" href="cards.html">Tambah Pegawai</a>
           </div>
@@ -69,11 +67,11 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Kendaraan Kab. Paser:</h6>
-            <a class="collapse-item" href="utilities-color.html">Roda Empat</a>
-            <a class="collapse-item" href="utilities-border.html">Roda Dua</a>
-            <a class="collapse-item" href="utilities-animation.html">Sewa</a>
+            <a class="collapse-item" href="/kendaraan">Daftar Kendaraan</a>
+            <a class="collapse-item" href="/pengguna">Pengguna Kendaraan</a>
+            <a class="collapse-item" href="/rent">Sewa</a>
             <a class="collapse-item" href="utilities-other.html">Dinas</a>
-            <a class="collapse-item" href="utilities-other.html">Tambah Kendaraan</a>
+            <a class="collapse-item" href="utilities-other.html">Penjualan</a>
           </div>
         </div>
       </li>
@@ -100,8 +98,10 @@
             <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
             <div class="collapse-divider"></div>
             <h6 class="collapse-header">Other Pages:</h6>
-            <a class="collapse-item" href="404.html">404 Page</a>
-            <a class="collapse-item active" href="blank.html">Blank Page</a>
+            <a class="collapse-item" href="/question">Diskusi BMD</a>
+            <a class="collapse-item" href="/categories">Kategori Diskusi</a>
+            <a class="collapse-item" href="blank.html">RKBMD</a>
+            <a class="collapse-item" href="blank.html">SSH</a>
           </div>
         </div>
       </li>
@@ -110,14 +110,24 @@
       <li class="nav-item">
         <a class="nav-link" href="charts.html">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Charts</span></a>
+          <span>Arsip Surat Tanah</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="charts.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Arsip Surat Pinjam Pakai</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="tables.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>Arsip Hibah</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Arsip Sewa BMD</span></a>
       </li>
 
       <!-- Divider -->

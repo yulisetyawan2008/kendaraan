@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePerangkatDaerahTable extends Migration
+class CreateJabatansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreatePerangkatDaerahTable extends Migration
      */
     public function up()
     {
-        Schema::create('perangkat_daerah', function (Blueprint $table) {
+        Schema::create('jabatans', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_opd');
-            $table->string('alamat_opd');
-            $table->string('status_opd');
+            $table->unsignedBigInteger('opd_id');
+            $table->foreign('opd_id')->references('id')->on('opds')->onDelete('cascade');
+            $table->string('nama_jabatan');
+            $table->string('eselon');
+            $table->string('status');
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ class CreatePerangkatDaerahTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('perangkat_daerah');
+        Schema::dropIfExists('jabatans');
     }
 }
