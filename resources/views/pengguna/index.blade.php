@@ -11,17 +11,19 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Perangkat Daerah</th>
                         <th>Jabatan</th>
+                        <th>Nama</th>
                         <th>Nopol</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                        <td>1</td>
-                        <td>BKAD</td>
-                        <td>Kepala</td>
-                        <td>KT1555E</td>
+                    @foreach($penggunas as $pengguna)
+                    <tr>
+                        <td>{{$loop->iteration}}</td>
+                        <td>{{$pengguna->jabatan->nama_jabatan}}</td>
+                        <td>{{$pengguna->pegawai->nama}}</td>
+                        <td>{{$pengguna->kendaraan->nopol}}</td>
                         <td>
                             <a href="#" class="btn btn-sm btn-warning">Edit</a>
                             <a href="#" class="btn btn-sm btn-primary">Lihat</a>
@@ -29,6 +31,10 @@
 
                             </form>
                         </td>
+                    </tr>
+                   
+                        
+                    @endforeach
                 </tbody>
             </table>
         </div>

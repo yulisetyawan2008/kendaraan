@@ -12,4 +12,8 @@ class Jabatan extends Model
     public function opd(){
         return $this->belongsTo('App\Opd');
     }
+
+    public function pengguna(){
+        return $this->belongsTo('App\Pengguna');
+    }
 }

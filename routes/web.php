@@ -72,3 +72,6 @@ Route::get('/rent', 'RentController@index');
 
 Route::get('/pengguna', 'PenggunaController@index');
 Route::get('/pengguna/create', 'PenggunaController@create');
+Route::post('/pengguna', 'PenggunaController@store');
+
+Route::get('/tugas1', 'TugasController@index');
